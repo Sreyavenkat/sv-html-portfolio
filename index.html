@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sreya V</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Sreya V</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+                
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="https://i.pinimg.com/736x/95/51/34/955134b9e6509100927872460951714b.jpg" alt="Sreya V profile pic">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello I'm</p>
+            <h1 class="title">Sreya V</h1>
+            <p class="section_text_p2">CS Engineering Student</p>
+            <div class="btn-container">
+                
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                <div id="socials-container">
+                    <img src="https://static.vecteezy.com/system/resources/previews/017/395/542/non_2x/linkedin-social-media-icon-symbol-logo-free-vector.jpg" 
+                    alt="My Linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/sreya-v-155a91292'">
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <p>
+                I'm a passionate computer science student at Model Engineering College, pursuing my B.Tech degree. I'm on an exciting journey to become a proficient coder, eager to explore the vast world of programming languages. My current focus is on JavaScript and React, where I'm gradually building my skills from the ground up.
+            </p>       
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Just Go Through My</p>
+        <h1 class="title">Experience</h1>
+        <div class="inside-experience">
+            <p>
+                In my Class 12th, I embarked on an exciting coding journey, crafting a music teaching institute Database using Python and MySQL. This project aimed to streamline the management of profiles efficiently. At its core, the system offered a user-friendly interface, allowing for the easy addition, modification, and deletion of teacher records.
+            </p>
+            <div class="list">
+                <ul>
+                    <li>User-Friendly Interface: Created an intuitive and user-friendly interface, allowing easy data entry and retrieval for music teachers' information.</li>
+                    <li>Efficient Search: Incorporated a search functionality for quick and accurate retrieval of records based on various criteria like name, specialty, and contact details.</li>
+                    <li>Record Management: Designed a system for adding, editing, and deleting teacher profiles, streamlining the maintenance of the database.</li>
+                    <li>Error Handling: Implemented error-checking and validation features to ensure data integrity and reliability</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <p class="section_text_p1">My Recent</p>
+        <h1 class="title">Projects</h1>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get In Touch</p>
+        <h1 class="title">My Contact</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="data:image/png;base64,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" 
+                alt="Email icon"
+                class="icon contact-icon">
+                <p><a href="mailto:sreyavenkat80@gmail.com">Sreyavenkat80@gmail.com</a></p>
+                
+            </div>
+            <div class="contact-info-container">
+                <img src="data:image/png;base64,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"
+                 alt="LinkedIn icon"
+                 class="icon contact-icon linkedin-icon">
+                 <p><a href="https://www.linkedin.com/in/sreya-v-155a91292">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+  <script> src="script.js"</script>
+    
+</body>
+</html>
